@@ -1,0 +1,23 @@
+{
+    "name": "astudios/errorpage",
+    "description": "",
+    "authors": [
+        {
+            "name": "Pekka Siiriäinen",
+            "email": "nospam@astudios.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Astudios\\Errorpage": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
