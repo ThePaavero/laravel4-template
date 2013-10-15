@@ -1,8 +1,8 @@
-/node_modules
-/bootstrap/compiled.php
-/vendor
+node_modules
+bootstrap/compiled.php
+vendor
 composer.phar
 composer.lock
 .DS_Store
-/sass-cache
-/app/config/workbench.php
+sass-cache
+app/config/workbench.php
