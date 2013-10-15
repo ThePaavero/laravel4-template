@@ -25,7 +25,6 @@ class AuthController extends BaseController {
 		}
 		else
 		{
-			Flashmessage::set('Wrong...', ':(');
 			return Redirect::to('/');
 		}
 	}
@@ -33,7 +32,6 @@ class AuthController extends BaseController {
 	public function logout()
 	{
 		Auth::logout();
-		Flashmessage::set('You logged out', ':|');
 		return Redirect::to('/');
 	}
 
@@ -51,7 +49,6 @@ class AuthController extends BaseController {
 	{
 		if(Input::get('password') !== Input::get('confirm_password'))
 		{
-			Flashmessage::set('Passwords did not match', ':(');
 			return Redirect::to('signup');
 		}
 
