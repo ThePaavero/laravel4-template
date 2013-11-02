@@ -114,6 +114,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Prologue\Alerts\AlertsServiceProvider',
+		'Intervention\Image\ImageServiceProvider'
 
 		// 'Way\Generators\GeneratorsServiceProvider'
 
@@ -184,6 +185,7 @@ return array(
 		'Flashmessage' => 'Astudios\Flashmessage\Flashmessage',
 		'Errorpage'    => 'Astudios\Errorpage\Errorpage',
 		'Alert'        => 'Prologue\Alerts\Facades\Alert',
+		'Image'        => 'Intervention\Image\Facades\Image',
 
 	),
 
