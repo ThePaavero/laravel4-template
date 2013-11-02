@@ -12,3 +12,5 @@
 */
 
 Artisan::add(new CreateUserCommand);
+Artisan::add(new DeleteUserCommand);
+Artisan::add(new ShowUsersCommand);

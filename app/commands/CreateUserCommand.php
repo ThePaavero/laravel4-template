@@ -41,15 +41,22 @@ class CreateUserCommand extends Command {
 	public function fire()
 	{
 		$userdata = array(
-			'username' => trim($this->ask('Username')),
-			'email'    => trim($this->ask('Email')),
+			'username' => trim($this->ask('Username', 'admin')),
+			'email'    => trim($this->ask('Email', 'admin@localhost')),
 			'password' => Hash::make(trim($this->secret('Password')))
 		);
 
-		$user = new User($userdata);
-		$id = $user->save();
+		! empty($userdata['username']) or die($this->error('Username is required!'));
+		! empty($userdata['password']) or die($this->error('Password is required!'));
 
-		$this->info('User "' . $userdata['username'] . '" created with ID ' . $id);
+		$user = new User($userdata);
+
+		// Check that this username isn't taken
+		$user->usernameExists($userdata['username']) === false or die($this->error('Username is taken!'));
+
+		$user->save() or die($this->error('Something went wrong, sorry. Check your database settings?'));
+
+		$this->info('User "' . $userdata['username'] . '" created with ID ' . $user->id);
 	}
 
 }

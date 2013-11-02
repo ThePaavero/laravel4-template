@@ -51,4 +51,15 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return $this->email;
 	}
 
+	/**
+	 * Does a username exist?
+	 *
+	 * @param  string $username
+	 * @return boolean
+	 */
+	public function usernameExists($username = '')
+	{
+		return ! empty($this->where('username', $username)->get()->toArray());
+	}
+
 }
