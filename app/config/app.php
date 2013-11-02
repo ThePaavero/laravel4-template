@@ -114,7 +114,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Prologue\Alerts\AlertsServiceProvider',
-		'Intervention\Image\ImageServiceProvider'
+		'Intervention\Image\ImageServiceProvider',
+		'Profiler\ProfilerServiceProvider',
 
 		// 'Way\Generators\GeneratorsServiceProvider'
 
@@ -186,6 +187,7 @@ return array(
 		'Errorpage'    => 'Astudios\Errorpage\Errorpage',
 		'Alert'        => 'Prologue\Alerts\Facades\Alert',
 		'Image'        => 'Intervention\Image\Facades\Image',
+		'Profiler'     => 'Profiler\Facades\Profiler',
 
 	),
 

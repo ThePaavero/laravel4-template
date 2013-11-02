@@ -6,7 +6,8 @@
 		"laravel/framework": "4.0.*",
 		"way/generators": "dev-master",
 		"prologue/alerts": "dev-master",
-		"intervention/image": "dev-master"
+		"intervention/image": "dev-master",
+		"loic-sharma/profiler": "1.1.*"
 	},
 	"autoload": {
 		"classmap": [
