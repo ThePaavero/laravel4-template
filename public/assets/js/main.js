@@ -7,4 +7,6 @@ $(function()
 {
 	var app = new Project.App();
 	app.init();
+
+	window.appInstance = app;
 });

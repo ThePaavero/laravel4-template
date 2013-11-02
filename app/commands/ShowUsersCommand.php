@@ -38,13 +38,12 @@ class ShowUsersCommand extends Command {
 	public function fire()
 	{
 		$users = User::all()->toArray();
+
 		if(empty($users))
 		{
 			$this->info('No users found.');
 			return;
 		}
-
-		$rows = [];
 
 		foreach($users as $user)
 		{

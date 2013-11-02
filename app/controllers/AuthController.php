@@ -21,16 +21,19 @@ class AuthController extends BaseController {
 
 		if(Auth::attempt($userdata))
 		{
+			Alert::success('You are now logged in')->flash();
 			return Redirect::to('/');
 		}
 		else
 		{
+			Alert::error('Please check your credentials')->flash();
 			return Redirect::to('/');
 		}
 	}
 
 	public function logout()
 	{
+		Alert::info('You are now logged out')->flash();
 		Auth::logout();
 		return Redirect::to('/');
 	}

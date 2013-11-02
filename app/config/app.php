@@ -113,6 +113,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+		'Prologue\Alerts\AlertsServiceProvider',
 
 		// 'Way\Generators\GeneratorsServiceProvider'
 
@@ -181,7 +182,8 @@ return array(
 		'Validator'    => 'Illuminate\Support\Facades\Validator',
 		'View'         => 'Illuminate\Support\Facades\View',
 		'Flashmessage' => 'Astudios\Flashmessage\Flashmessage',
-		'Errorpage'    => 'Astudios\Errorpage\Errorpage'
+		'Errorpage'    => 'Astudios\Errorpage\Errorpage',
+		'Alert'        => 'Prologue\Alerts\Facades\Alert',
 
 	),
 
