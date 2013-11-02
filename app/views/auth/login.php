@@ -12,5 +12,3 @@
 	<br/>
 	<input type='submit' value='Submit' />
 </form>
-
-<a href='<?php echo URL::to('signup') ?>'>Signup?</a>

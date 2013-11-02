@@ -35,7 +35,7 @@ class AuthController extends BaseController {
 		return Redirect::to('/');
 	}
 
-	public function signup()
+	/*public function signup()
 	{
 		View::share('data', array(
 				'page'  => 'auth.signup',
@@ -43,9 +43,9 @@ class AuthController extends BaseController {
 			));
 
 		return View::make('maintemplate');
-	}
+	}*/
 
-	public function signup_submit()
+	/*public function signup_submit()
 	{
 		if(Input::get('password') !== Input::get('confirm_password'))
 		{
@@ -62,6 +62,6 @@ class AuthController extends BaseController {
 		$user->save();
 
 		return Redirect::to('login');
-	}
+	}*/
 
 }
